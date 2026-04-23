@@ -1,0 +1,11 @@
+{% extends "_base.html" %}
+
+{% block title %}Jokes{% endblock %}
+{% block main %}
+  <h2>Books we have opinions about!</h2>
+  <ul class="list-group list-group-flush mb-3">
+    {% for book in book_list %}
+      <li class="list-group-item">{{ book.title }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
