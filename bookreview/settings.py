@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     #local
     'pages.apps.PagesConfig',
+    'reviews.apps.ReviewsConfig',
 
 ]
 
