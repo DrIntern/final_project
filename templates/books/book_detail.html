@@ -3,15 +3,16 @@
 {% block title %}Book{% endblock %}
 {% block main %}
   <div class="card border-red m-auto mb-3 text-center"
-    style="max-width: 30rem">
-    <div class="card-header"></div>
-    <div class="card-body text-dark">
-        <h1 class="card-title">{{ book.title }}</h1>
+    style="max-width: 60rem">
+    <div class="card-header">
+      <h1 class="card-title">{{ book.title }}</h1>
         <h5>By</h5>
         <h3 class="card-title">{{ book.author }}</h3>
-        <h5>
+    </div>
+    <div class="card-body text-dark">
+        <p class="fw-bold">
             {{book.title}} is a {{book.genre}} novel written by {{book.author}}. It was first published on {{book.first_published}}.
-        </h5>
+        </p>
     </div>
     <div class="card-footer">
       <small class="text-muted">

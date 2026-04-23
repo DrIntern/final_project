@@ -10,9 +10,9 @@
     {% for book in book_list %}
       <li class="list-group-item">
         <a href="{{book.get_absolute_url}}">{{ book.title }}</a>
-        <a href="{% url 'books:delete' book.pk %}"
+        <a href="{% url 'books:delete' book.slug %}"
           class="btn btn-danger btn-sm float-end me-2">Delete</a>
-        <a href="{% url 'books:update' book.pk %}"
+        <a href="{% url 'books:update' book.slug %}"
           class="btn btn-info btn-sm float-end me-2">Update</a>
       </li>
     {% endfor %}
