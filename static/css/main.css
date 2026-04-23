@@ -50,3 +50,15 @@ label {
   background-color: pink;
   color: darkred;
 }
+
+.border-red {
+  border: 1px solid rgb(218, 3, 3);
+}
+
+.card-header {
+  border-bottom: 1px solid rgb(218, 3, 3);
+}
+
+.card-footer {
+  border-top: 1px solid rgb(218, 3, 3); ;
+}
