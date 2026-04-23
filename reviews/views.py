@@ -1,5 +1,6 @@
-from django.views.generic import CreateView, DetailView, ListView, UpdateView
+from django.views.generic import CreateView, DetailView, ListView, UpdateView, DeleteView
 from .models import Book
+from django.urls import reverse_lazy
 
 # Create your views here.
 
@@ -16,3 +17,7 @@ class BookCreateView(CreateView):
 class BookUpdateView(UpdateView):
     model = Book
     fields = ['title', 'author', 'genre', 'first_published']
+
+class BookDeleteView(DeleteView):
+    model = Book
+    success_url = reverse_lazy('reviews:list')
