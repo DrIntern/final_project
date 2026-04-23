@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #local
+    'books.apps.BooksConfig',
     'pages.apps.PagesConfig',
     'reviews.apps.ReviewsConfig',
 

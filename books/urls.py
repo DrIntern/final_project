@@ -3,7 +3,7 @@ from .views import (
     BookCreateView, BookDetailView, BookListView,
     BookUpdateView,BookDeleteView,)
 
-app_name = 'reviews'
+app_name = 'books'
 urlpatterns = [
     path('book/<int:pk>/update/', BookUpdateView.as_view(), name='update'),
     path('book/create/', BookCreateView.as_view(), name= 'create'),
