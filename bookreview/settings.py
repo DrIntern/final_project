@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'crispy_forms',
+    'crispy_bootstrap5',
 
     #local
     'books.apps.BooksConfig',
@@ -54,6 +56,12 @@ INSTALLED_APPS = [
 
 ]
 
+#crispy stuff
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+#something for allauth
 SITE_ID = 1
 
 MIDDLEWARE = [

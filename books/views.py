@@ -1,6 +1,7 @@
 from django.views.generic import CreateView, DetailView, ListView, UpdateView, DeleteView
 from .models import Book
 from django.urls import reverse_lazy
+from .forms import BookForm
 
 # Create your views here.
 
@@ -12,11 +13,11 @@ class BookDetailView(DetailView):
 
 class BookCreateView(CreateView):
     model = Book
-    fields = ['title', 'author', 'genre', 'first_published']
+    form_class = BookForm
 
 class BookUpdateView(UpdateView):
     model = Book
-    fields = ['title', 'author', 'genre', 'first_published']
+    form_class = BookForm
 
 class BookDeleteView(DeleteView):
     model = Book
